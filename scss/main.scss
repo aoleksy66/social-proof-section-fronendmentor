@@ -163,6 +163,9 @@ body {
 		&__rating {
 			flex-direction: row;
 			gap: 2em;
+			&-container {
+				padding-bottom: 0;
+			}
 		}
 		.center-x {
 			transform: translateX(3rem);
