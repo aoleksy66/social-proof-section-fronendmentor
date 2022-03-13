@@ -135,7 +135,7 @@ body {
 @media (min-width: 1300px) {
 	body {
 		background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
-		background-position: top left, bottom right;
+		background-position: top, bottom;
 	}
 	.wrapper {
 		flex-direction: row;
