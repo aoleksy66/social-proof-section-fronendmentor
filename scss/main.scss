@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Spartan', sans-serif;
+	font-size: 93.75%; //15px
+	background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+	background-position: top, bottom;
+	background-repeat: no-repeat;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	text-align: center; //pamietaj jakby sie tekst wysypywal
+}
+
+.titling {
+	h1 {
+		font-size: 2em;
+		margin: 2em 2em 1em 2em;
+		color: hsl(300, 43%, 22%);
+	}
+
+	.desc {
+		padding: 1em;
+		color: hsl(303, 10%, 53%);
+		font-weight: 400;
+	}
+}
+.ratings {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin: 2em;
+
+	&__rating {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1em 2em;
+		background-color: hsl(300, 24%, 96%);
+		border-radius: 6px;
+		&-container {
+			display: flex;
+			flex-direction: row;
+			width: 7rem;
+			gap: 0.7em;
+			padding-bottom: 0.6em;
+			&-star {
+				width: 1em;
+				height: 1em;
+				background-image: url(/images/icon-star.svg);
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+		&-text {
+			font-weight: 700;
+			color: hsl(300, 43%, 22%);
+		}
+	}
+}
+
+//pozycjonowanie imienia i "verified
+.data {
+	display: flex;
+	flex-direction: column;
+}
+
+// koniec
+.reviews {
+	display: flex;
+	flex-direction: column;
+	margin: 2em;
+	gap: 2em;
+	&__card {
+		background-color: hsl(300, 43%, 22%);
+		border-radius: 6px;
+		&-review {
+			position: relative;
+			padding: 2em;
+			color: hsl(300, 24%, 96%);
+			&-person {
+				position: relative;
+				padding: 1em;
+				margin-bottom: 1.5em;
+				&-profimg {
+					position: absolute;
+					width: 3.5em;
+					height: 3.5em;
+					top: 0.5em;
+					left: 0;
+					background-size: contain;
+					background-repeat: no-repeat;
+					border-radius: 50%;
+				}
+
+				&-name {
+					font-size: 0.8em;
+					font-weight: 700;
+					color: white;
+				}
+				&-verified {
+					font-size: 0.8em;
+					font-weight: 400;
+					color: hsl(333, 80%, 67%);
+				}
+			}
+			&-text {
+				text-align: left;
+				line-height: 1.5em;
+			}
+		}
+	}
+
+	.one {
+		background-image: url(/images/image-colton.jpg);
+	}
+	.two {
+		background-image: url(/images/image-irene.jpg);
+	}
+	.three {
+		background-image: url(/images/image-anne.jpg);
+	}
+}
