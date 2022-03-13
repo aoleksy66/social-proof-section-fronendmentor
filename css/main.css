@@ -27,13 +27,13 @@ body {
 }
 
 .titling h1 {
-  font-size: 2em;
-  margin: 2em 2em 1em 2em;
+  font-size: 2rem;
+  margin: 2rem 2rem 1rem 2rem;
   color: #502050;
 }
 
 .titling .desc {
-  padding: 1em;
+  padding: 1rem;
   color: #937b92;
   font-weight: 400;
 }
@@ -46,8 +46,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1em;
-  margin: 2em;
+  gap: 1rem;
+  margin: 2rem;
 }
 
 .ratings__rating {
@@ -61,7 +61,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em 2em;
+  padding: 1rem 2rem;
   background-color: #f7f2f7;
   border-radius: 6px;
 }
@@ -74,14 +74,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 7rem;
-  gap: 0.7em;
-  padding-bottom: 0.6em;
+  gap: 0.7rem;
+  padding-bottom: 0.6rem;
 }
 
 .ratings__rating-container-star {
   width: 1em;
-  height: 1em;
+  height: 1rem;
   background-image: url(/images/icon-star.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -110,8 +109,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 2em;
-  gap: 2em;
+  margin: 2rem;
+  gap: 2rem;
 }
 
 .reviews__card {
@@ -121,21 +120,21 @@ body {
 
 .reviews__card-review {
   position: relative;
-  padding: 2em;
+  padding: 2rem;
   color: #f7f2f7;
 }
 
 .reviews__card-review-person {
   position: relative;
-  padding: 1em;
-  margin-bottom: 1.5em;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .reviews__card-review-person-profimg {
   position: absolute;
-  width: 3.5em;
-  height: 3.5em;
-  top: 0.5em;
+  width: 3.5rem;
+  height: 3.5rem;
+  top: 0.5rem;
   left: 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -143,20 +142,20 @@ body {
 }
 
 .reviews__card-review-person-name {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 700;
   color: white;
 }
 
 .reviews__card-review-person-verified {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 400;
   color: #ee68a4;
 }
 
 .reviews__card-review-text {
   text-align: left;
-  line-height: 1.5em;
+  line-height: 1.5rem;
 }
 
 .reviews .one {
@@ -169,5 +168,66 @@ body {
 
 .reviews .three {
   background-image: url(/images/image-anne.jpg);
+}
+
+@media (min-width: 1300px) {
+  body {
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+  }
+  .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 5rem 10rem;
+  }
+  .titling {
+    text-align: left;
+    width: 50%;
+  }
+  .titling h1 {
+    font-size: 3rem;
+    margin: 2rem 2rem 1rem 1rem;
+    color: #502050;
+  }
+  .titling .desc {
+    padding: 1rem;
+    color: #937b92;
+    font-weight: 400;
+  }
+  .ratings__rating {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2em;
+  }
+  .ratings .center-x {
+    -webkit-transform: translateX(3rem);
+            transform: translateX(3rem);
+  }
+  .ratings .right-x {
+    -webkit-transform: translateX(6rem);
+            transform: translateX(6rem);
+  }
+  .reviews {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 2rem;
+    font-size: 0.7rem;
+  }
+  .reviews .center-y {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  .reviews .right-y {
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+  }
 }
 /*# sourceMappingURL=main.css.map */
